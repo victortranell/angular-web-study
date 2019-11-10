@@ -1,3 +1,25 @@
+# Install
+
+```
+npm i -g typescript 
+npm i -g @angular/cli
+npm install
+```
+
+# Tasks
+- [ ] Change date format on todos using pipe
+- [ ] Make a pipe to filter all todos that haven't expired
+- [ ] Add a new service with an API and return the response as an observable like resource [2].
+- [ ] Make use of changes.X to choose what is rendered.
+- [ ] Create a directive
+
+
+## Resources
+1. https://angular.io/guide/pipes
+2. https://codecraft.tv/courses/angular/http/http-with-observables/
+
+
+# Angular CLI standard readme
 # WebStudyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.

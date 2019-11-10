@@ -1,0 +1,31 @@
+<h3>My todo-list!</h3>
+
+<div>
+    <span>
+        Label
+    </span>
+    <span>
+        Priority
+    </span>
+    <span>
+        Due date
+    </span>
+</div>
+<div *ngFor="let todo of todos | async">
+    <span>
+        {{ todo.label }}
+    </span>
+    <span>
+        {{ todo.priority }}
+    </span>
+    <span>
+        {{ todo.dueDate }}
+    </span>
+</div>
+
+<div>
+    <input placeholder="label" (keyup)="setNewLabel($event)">
+    <input placeholder="priority" (keyup)="setNewPriority($event)">
+    <input placeholder="dueDate" (keyup)="setNewDueDate($event)">
+    <button [disabled]="!isLabel(newLabel) || !isPriority(newPriority) || !isDueDate(newDueDate)" (click)="addTodo()">Add</button>
+</div>
